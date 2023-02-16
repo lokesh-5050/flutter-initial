@@ -16,11 +16,16 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blue[300],
       ),
       // body: Center(
-        body: Container(
-          padding: EdgeInsets.symmetric(horizontal:190 , vertical: 50),
-          margin: EdgeInsets.all(20),
-          child: Text("hey"),
-          color: Colors.grey,
+        // body: Container(
+        //   padding: EdgeInsets.symmetric(horizontal:190 , vertical: 50),
+        //   margin: EdgeInsets.all(20),
+        //   child: Text("hey"),
+        //   color: Colors.grey,
+        // ),
+
+        body: Padding(
+          padding: EdgeInsets.all(40),
+          child: Text('hey'),
         ),
         
           // child: ElevatedButton(
