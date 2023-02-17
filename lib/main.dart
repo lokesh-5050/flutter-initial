@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +16,30 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blue[300],
       ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Text('Hey there'),
+          TextButton(
+            onPressed: ()=>{},
+            child: Text(
+              'Tt Bt',
+              style: TextStyle(
+                color: Colors.black
+              ),
+            ),
+            style: TextButton.styleFrom(
+              backgroundColor: Colors.amber,
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color: Colors.grey,
+            child: Text('Inside Container'),
+          )
+        ],
+      ),
       // body: Center(
         // body: Container(
         //   padding: EdgeInsets.symmetric(horizontal:190 , vertical: 50),
@@ -23,10 +48,10 @@ class Home extends StatelessWidget {
         //   color: Colors.grey,
         // ),
 
-        body: Padding(
-          padding: EdgeInsets.all(40),
-          child: Text('hey'),
-        ),
+        // body: Padding(
+        //   padding: EdgeInsets.all(40),
+        //   child: Text('hey'),
+        // ),
         
           // child: ElevatedButton(
           //   onPressed: ()=>{},
