@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,59 +15,89 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blue[300],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        
+      body: Row(
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Container(
-                padding: EdgeInsets.all(20),
-                color: Colors.amber,
-                child: Text('Row1'),
-              ),
-              Container(
-                padding: EdgeInsets.all(20),
-                color: Colors.amber,
-                child: Text('Row2'),
-              ),
-              Container(
-                padding: EdgeInsets.all(20),
-                color: Colors.amber,
-                child: Text('Row3'),
-              ),
-              Container(
-                padding: EdgeInsets.all(20),
-                color: Colors.amber,
-                child: Text('Row4'),
-              ),
-            ],
+          Expanded(child: Image.asset('assets/fooddrink.jpg'),flex: 3,),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.pinkAccent,
+              child: Text('hey1'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(20),
-            color: Colors.cyan,
-            child: Text('Column1'),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.cyanAccent,
+              child: Text('hey2'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(30),
-            color: Colors.cyan,
-            child: Text('Column2'),
-          ),
-          Container(
-            padding: EdgeInsets.all(40),
-            color: Colors.cyan,
-            child: Text('Column3'),
-          ),
-          Container(
-            padding: EdgeInsets.all(50),
-            color: Colors.cyan,
-            child: Text('Column4'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.amber,
+              child: Text('1'),
+            ),
           ),
         ],
       ),
+      // body: Column(
+
+      //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+
+      //   children: <Widget>[
+      //     Row(
+      //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //       crossAxisAlignment: CrossAxisAlignment.start,
+      //       children: <Widget>[
+      //         Container(
+      //           padding: EdgeInsets.all(20),
+      //           color: Colors.amber,
+      //           child: Text('Row1'),
+      //         ),
+      //         Container(
+      //           padding: EdgeInsets.all(20),
+      //           color: Colors.amber,
+      //           child: Text('Row2'),
+      //         ),
+      //         Container(
+      //           padding: EdgeInsets.all(20),
+      //           color: Colors.amber,
+      //           child: Text('Row3'),
+      //         ),
+      //         Container(
+      //           padding: EdgeInsets.all(20),
+      //           color: Colors.amber,
+      //           child: Text('Row4'),
+      //         ),
+      //       ],
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(20),
+      //       color: Colors.cyan,
+      //       child: Text('Column1'),
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(30),
+      //       color: Colors.cyan,
+      //       child: Text('Column2'),
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(40),
+      //       color: Colors.cyan,
+      //       child: Text('Column3'),
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(50),
+      //       color: Colors.cyan,
+      //       child: Text('Column4'),
+      //     ),
+      //   ],
+      // ),
       // body: Row(
       //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       //   crossAxisAlignment: CrossAxisAlignment.center,
@@ -94,55 +123,55 @@ class Home extends StatelessWidget {
       //   ],
       // ),
       // body: Center(
-        // body: Container(
-        //   padding: EdgeInsets.symmetric(horizontal:190 , vertical: 50),
-        //   margin: EdgeInsets.all(20),
-        //   child: Text("hey"),
-        //   color: Colors.grey,
-        // ),
+      // body: Container(
+      //   padding: EdgeInsets.symmetric(horizontal:190 , vertical: 50),
+      //   margin: EdgeInsets.all(20),
+      //   child: Text("hey"),
+      //   color: Colors.grey,
+      // ),
 
-        // body: Padding(
-        //   padding: EdgeInsets.all(40),
-        //   child: Text('hey'),
-        // ),
-        
-          // child: ElevatedButton(
-          //   onPressed: ()=>{},
-          //   child: Text("hey"),
-          // ),
-          // child: IconButton(
-          //   onPressed: ()=>{},
-          //   icon: Icon(Icons.alarm),
-          //   color: Colors.blue,
-          // ),
-          // child: ElevatedButton.icon(
-          //   style: ElevatedButton.styleFrom(
-          //     backgroundColor: Colors.blue[400]
-          //   ),
-          //   onPressed: () => {},
-          //   icon: Icon(
-          //     Icons.mail,
-          //     color: Colors.white,
-          //   ),
-          //   label: Text("Mail me"),
-          // ),
-          // child : Image.asset('assets/fooddrink.jpg')
-          // child: Icon(
-          //   Icons.sunny,
-          //   color: Colors.blue,
-          //   size: 30,
-          // ),
+      // body: Padding(
+      //   padding: EdgeInsets.all(40),
+      //   child: Text('hey'),
+      // ),
 
-          // ,child: Text(
-          //   'Hey There',
-          //   style: TextStyle(
-          //       fontSize: 20.9,
-          //       color: Colors.grey[600],
-          //       fontWeight: FontWeight.bold,
-          //       letterSpacing: 2.9,
-          //       fontFamily: 'RobotoItalic'),
-          // ),
-          // ),
+      // child: ElevatedButton(
+      //   onPressed: ()=>{},
+      //   child: Text("hey"),
+      // ),
+      // child: IconButton(
+      //   onPressed: ()=>{},
+      //   icon: Icon(Icons.alarm),
+      //   color: Colors.blue,
+      // ),
+      // child: ElevatedButton.icon(
+      //   style: ElevatedButton.styleFrom(
+      //     backgroundColor: Colors.blue[400]
+      //   ),
+      //   onPressed: () => {},
+      //   icon: Icon(
+      //     Icons.mail,
+      //     color: Colors.white,
+      //   ),
+      //   label: Text("Mail me"),
+      // ),
+      // child : Image.asset('assets/fooddrink.jpg')
+      // child: Icon(
+      //   Icons.sunny,
+      //   color: Colors.blue,
+      //   size: 30,
+      // ),
+
+      // ,child: Text(
+      //   'Hey There',
+      //   style: TextStyle(
+      //       fontSize: 20.9,
+      //       color: Colors.grey[600],
+      //       fontWeight: FontWeight.bold,
+      //       letterSpacing: 2.9,
+      //       fontFamily: 'RobotoItalic'),
+      // ),
+      // ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => print("hey"),
         child: Text("Click"),
