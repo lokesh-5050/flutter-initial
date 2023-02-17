@@ -16,30 +16,83 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blue[300],
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        
         children: <Widget>[
-          Text('Hey there'),
-          TextButton(
-            onPressed: ()=>{},
-            child: Text(
-              'Tt Bt',
-              style: TextStyle(
-                color: Colors.black
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.all(20),
+                color: Colors.amber,
+                child: Text('Row1'),
               ),
-            ),
-            style: TextButton.styleFrom(
-              backgroundColor: Colors.amber,
-            ),
+              Container(
+                padding: EdgeInsets.all(20),
+                color: Colors.amber,
+                child: Text('Row1'),
+              ),
+              Container(
+                padding: EdgeInsets.all(20),
+                color: Colors.amber,
+                child: Text('Row1'),
+              ),
+              Container(
+                padding: EdgeInsets.all(20),
+                color: Colors.amber,
+                child: Text('Row1'),
+              ),
+            ],
           ),
           Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.grey,
-            child: Text('Inside Container'),
-          )
+            padding: EdgeInsets.all(20),
+            color: Colors.cyan,
+            child: Text('Column1'),
+          ),
+          Container(
+            padding: EdgeInsets.all(30),
+            color: Colors.cyan,
+            child: Text('Column2'),
+          ),
+          Container(
+            padding: EdgeInsets.all(40),
+            color: Colors.cyan,
+            child: Text('Column3'),
+          ),
+          Container(
+            padding: EdgeInsets.all(50),
+            color: Colors.cyan,
+            child: Text('Column4'),
+          ),
         ],
       ),
+      // body: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.center,
+      //   children: <Widget>[
+      //     Text('Hey there'),
+      //     TextButton(
+      //       onPressed: ()=>{},
+      //       child: Text(
+      //         'Tt Bt',
+      //         style: TextStyle(
+      //           color: Colors.black
+      //         ),
+      //       ),
+      //       style: TextButton.styleFrom(
+      //         backgroundColor: Colors.amber,
+      //       ),
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(20.0),
+      //       color: Colors.grey,
+      //       child: Text('Inside Container'),
+      //     )
+      //   ],
+      // ),
       // body: Center(
         // body: Container(
         //   padding: EdgeInsets.symmetric(horizontal:190 , vertical: 50),
