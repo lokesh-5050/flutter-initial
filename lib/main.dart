@@ -33,17 +33,17 @@ class Home extends StatelessWidget {
               Container(
                 padding: EdgeInsets.all(20),
                 color: Colors.amber,
-                child: Text('Row1'),
+                child: Text('Row2'),
               ),
               Container(
                 padding: EdgeInsets.all(20),
                 color: Colors.amber,
-                child: Text('Row1'),
+                child: Text('Row3'),
               ),
               Container(
                 padding: EdgeInsets.all(20),
                 color: Colors.amber,
-                child: Text('Row1'),
+                child: Text('Row4'),
               ),
             ],
           ),
